@@ -1,0 +1,6 @@
+[submodule "vim/.vim/bundle/Syntastic"]
+	path = vim/.vim/bundle/Syntastic
+	url = https://github.com/vim-scripts/Syntastic.git
+[submodule "i3/conky-simple"]
+	path = i3/conky-simple
+	url = git@github.com:fpczk/conky-simple.git
