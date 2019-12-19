@@ -4,3 +4,6 @@
 [submodule "i3/conky-simple"]
 	path = i3/conky-simple
 	url = git@github.com:fpczk/conky-simple.git
+[submodule "zsh/.oh-my-zsh"]
+	path = zsh/.oh-my-zsh
+	url = git@github.com:ohmyzsh/ohmyzsh.git

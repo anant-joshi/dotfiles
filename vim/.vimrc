@@ -1,5 +1,7 @@
 filetype off
 set nocompatible
+syntax enable
+set background=dark
 
 set rtp+=~/.vim/bundle/Vundle.vim/
 set rtp+=~/.vim/bundle/vim-addon-manager/
@@ -12,6 +14,12 @@ Plugin 'google/vim-codefmt'
 Plugin 'google/vim-glaive'
 Plugin 'ntpeters/vim-better-whitespace'
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'dylanaraps/wal.vim'
+Plugin 'tomlion/vim-solidity'
+Plugin 'junegunn/rainbow_parentheses.vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim'}
 
 call vundle#end()
 set autoread
@@ -56,7 +64,7 @@ if has("autocmd")
   au!
 
   " For all text files set 'textwidth' to 78 characters.
-  autocmd FileType text setlocal textwidth=78
+  autocmd FileType text setlocal textwidth=80
 
   augroup END
 
@@ -74,7 +82,7 @@ if has('syntax') && has('eval')
   packadd matchit
 endif
 
-set rtp+=/usr/lib/python3.6/site-packages/powerline/bindings/vim
+"set rtp+=/home/anant/.local/lib64/python3.6/site-packages/powerline/bindings/vim/plugins/
 set laststatus=2
 set showtabline=2
 set noshowmode
@@ -87,9 +95,23 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces"
 set expandtab
 syntax enable
-set background=dark
-colorscheme solarized
+"colorscheme wal
 set number
 set relativenumber
 set clipboard=unnamedplus
+
+" Search down into subfolders
+set path+=**
+
+" Display all matching filenames when you press <TAB>
+set wildmenu
 let mapleader = "\<Space>"
+let g:ycm_python_binary_path = "python"
+let g:ycm_server_python_interpreter = "python3"
+colorscheme solarized
+set guifont=Inconsolata\ for\ Powerline\ Medium\ 14
+:set guioptions-=T
+set colorcolumn=80
+let g:rainbow#max_level = 16
+let g:rainbow#pairs = [['(', ')'], ['[', ']'], ['{','}']]
+au VimEnter * RainbowParentheses
