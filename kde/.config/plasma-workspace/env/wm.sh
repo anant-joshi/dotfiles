@@ -1,6 +1,6 @@
 # Disable KWin and use i3gaps as WM
-export KDEWM=/usr/bin/i3
-# export KDEWM=/usr/bin/kwin
+# export KDEWM=/usr/bin/i3
+export KDEWM=/usr/bin/kwin
 
 # Compositor (Animations, Shadows, Transparency)
  #xcompmgr -C

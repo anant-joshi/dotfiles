@@ -1,0 +1,6 @@
+# Launcher
+bindsym $mod+d exec $menu
+bindsym $mod+Shift+d exec $menu_run
+
+# Terminal
+bindsym $mod+Return exec $term

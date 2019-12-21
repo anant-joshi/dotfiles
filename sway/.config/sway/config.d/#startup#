@@ -1,0 +1,5 @@
+exec emacs --daemon
+exec mako
+exec wal -R
+exec pulseeffects --gapplication-service
+exec lxqt-policykit-agent

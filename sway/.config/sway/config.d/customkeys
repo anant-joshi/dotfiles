@@ -1,0 +1,17 @@
+mode "Instant Launch" {
+    bindsym f exec env MOZ_ENABLE_WAYLAND=1 firefox; mode "default"
+    bindsym c exec chromium; mode "default"
+    bindsym d exec dolphin; mode "default"
+    bindsym o exec okular; mode "default"
+    bindsym e exec emacsclient -c; mode "default"
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+i mode "Instant Launch"
+
+bindsym $mod+Shift+x exec swaylock-blur --blur-sigma 50
+
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous

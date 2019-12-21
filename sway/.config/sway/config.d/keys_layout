@@ -1,0 +1,21 @@
+# Layout
+
+bindsym $mod+b splith
+bindsym $mod+v splitv
+
+# Layout Styles
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Fullscreen
+bindsym $mod+f fullscreen
+
+# Floating and tiling
+bindsym $mod+Shift+space floating toggle
+
+# Swap focus between floating and tiling
+bindsym $mod+space focus mode_toggle
+
+# Move focus to parent container
+bindsym $mod+a focus parent

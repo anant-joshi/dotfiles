@@ -7,6 +7,8 @@
 
 (setq package-enable-at-startup nil)
 
+(setq vc-follow-symlinks t)
+
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/"))
 (add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))           
@@ -28,7 +30,7 @@
  '(custom-enabled-themes (quote (solarized-dark)))
  '(custom-safe-themes
    (quote
-    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+    ("2809bcb77ad21312897b541134981282dc455ccd7c14d74cc333b6e549b824f3" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
  '(display-line-numbers-type (quote relative))
  '(minimap-dedicated-window nil)
  '(minimap-highlight-line nil)
@@ -48,6 +50,8 @@
 (require 'powerline-evil)
 (require 'powerline)
 (powerline-evil-center-color-theme)
+
+
 
 (require 'evil)
 (evil-mode t)
@@ -79,11 +83,12 @@
   (use-package evil-indent-textobject
     :ensure t))
 
-(use-package 'projectile
+(use-package projectile
   :ensure t
   :config
-  (global projectile-mode)
-  (setq projectile-project-search-path '("~/Documents/Gatech/")))
+  (setq projectile-project-search-path '("~/Documents/Gatech/"))
+  (projectile-mode))
+
 (when (version<= "26.0.50" emacs-version )
   (global-display-line-numbers-mode 1)
   (setq display-line-numbers 'relative))
@@ -94,7 +99,6 @@
 (setq package-check-signature nil)
 
 (setq-default indent-tabs-mode nil)
-(infer-indentation-style)
 
 (setq tramp-default-method "ssh")
 (require 'ox-latex)

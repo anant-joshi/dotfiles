@@ -12,3 +12,15 @@ Session.vim
 *~
 # Auto-generated tag files
 tags
+
+# Emacs cruft
+emacs/.emacs.d/elpy/*
+emacs/.emacs.d/elpa/*
+emacs/.emacs.d/games/*
+emacs/.emacs.d/packages/*
+emacs/.emacs.d/projectile-bookmarks.eld
+emacs/.emacs.d/session*
+emacs/.emacs.d/tramp
+emacs/.emacs.d/transient/*
+emacs/.emacs.d/url/*
+

@@ -1,0 +1,16 @@
+{
+    "com.github.dhelmr.ulauncher-duckduckgo-bangs": {
+        "id": "com.github.dhelmr.ulauncher-duckduckgo-bangs",
+        "url": "https://github.com/dhelmr/ulauncher-duckduckgo-bangs",
+        "updated_at": "2019-12-20T01:53:32.060898",
+        "last_commit": "1d58b51368f420893abeca84b5a06c3438fcf8f7",
+        "last_commit_time": "2019-12-19T17:18:11"
+    },
+    "com.github.iboyperson.ulauncher-system": {
+        "id": "com.github.iboyperson.ulauncher-system",
+        "url": "https://github.com/iboyperson/ulauncher-system",
+        "updated_at": "2019-12-20T01:54:16.345560",
+        "last_commit": "03c44234d79ecd20aa1d4e86f78842dda8388ea9",
+        "last_commit_time": "2019-12-08T07:41:45"
+    }
+}

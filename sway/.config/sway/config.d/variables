@@ -1,0 +1,60 @@
+# Main Modifier Key
+set $mod Mod4
+
+
+# Sway Font and size
+set $font pango:System San Francisco Display Regular 10
+
+
+# Navigation
+set $left h
+set $down j
+set $up k
+set $right l
+
+
+# Design
+
+set $gaps 6
+set $gaps_inner 4
+set $gaps_outer 2
+set $background_image /usr/share/wallpapers/SafeLanding/contents/images/5120x2880.jpg
+set $opacity 0.9
+set $screenshot_dir $HOME/Pictures/Screenshots
+
+
+# Workspaces
+
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+set $ws11 "11"
+set $ws12 "12"
+set $ws13 "13"
+set $ws14 "14"
+set $ws15 "15"
+set $ws16 "16"
+set $ws17 "17"
+set $ws18 "18"
+set $ws19 "19"
+set $ws20 "20"
+
+
+# Application variables
+
+set $menu wofi --show drun
+set $menu_run wofi --show run
+set $term konsole
+
+# Enable XWayland
+xwayland enable
+
+default_border none
+default_floating_border normal

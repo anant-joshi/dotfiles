@@ -1,0 +1,15 @@
+# Reload config file
+bindsym $mod+Shift+c reload
+
+# Exit sway
+bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -b 'Yes, exit sway' 'swaymsg exit'
+
+#Swaylock
+bindsym $mod+Shift+x exec swaylock-blur --blur-sigma 50
+
+# kill focused window
+bindsym $mod+Shift+q kill
+
+#Screenshot
+bindsym Print exec grim -o $focused_output $screenshot_dir/"Screenshot_`date +%Y-%m-%d-%T`.png"
+bindsym Shift+Print exec slurp | grim -g - $screenshot_dir/"Screenshot_`date +%Y-%m-%d-%T`.png"
