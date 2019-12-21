@@ -1,6 +1,6 @@
 mode "Move to Monitor" {
-    bindsym $mod+$left move output left; mode "default"
-    bindsym $mod+$right move output right; mode "default"
+    bindsym $left move workspace output left; mode "default"
+    bindsym $right move workspace output right; mode "default"
     bindsym Return mode "default"
     bindsym Escape mode "default"
 }

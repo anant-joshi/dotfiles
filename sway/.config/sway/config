@@ -8,6 +8,7 @@ include $config_dir/keys_applications
 include $config_dir/keys_device
 include $config_dir/keys_layout
 include $config_dir/keys_meta
+include $config_dir/keys_scratchpad
 include $config_dir/mode_instant_launch
 include $config_dir/mode_resize
 include $config_dir/mode_move_to_monitor
