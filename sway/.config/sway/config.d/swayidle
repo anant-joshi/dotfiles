@@ -1,0 +1,12 @@
+exec swayidle -w \
+	before-sleep    'swaylock-blur --blur-sigma 50'\
+	timeout 120	'brightnessctl s 5%-' \
+		resume 	'brightnessctl s 5%+' \
+	timeout 240     'swaylock-blur --blur-sigma 50'\
+	timeout 360 	'systemctl suspend'
+
+
+	before-sleep swaylock-blur --blur-sigma 50\
+
+exec swayidle -w \
+        after-resume 'i8kfan 0 0'

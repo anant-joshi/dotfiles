@@ -1,3 +1,16 @@
+if [[ "$TERM" == "dumb" ]]
+then
+  unsetopt zle
+  unsetopt prompt_cr
+  unsetopt prompt_subst
+  if whence -w precmd >/dev/null; then
+      unfunction precmd
+  fi
+  if whence -w preexec >/dev/null; then
+      unfunction preexec
+  fi
+  PS1='$ '
+fi
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -98,8 +111,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-#alias ls='ls --color=auto'
-alias ls='colorls'
+alias ls='ls --color=auto'
 HISTFILE=~/.histfile
 HISTSIZE=1000
 SAVEHIST=1000
@@ -117,7 +129,6 @@ ENV_NAME=py3
 export QT_QPA_PLATFORMTHEME="qt5ct"
 OMP_NUM_THREADS=8; export OMP_NUM_THREADS
 #export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-export PATH=/home/anant/.local/bin:/home/anant/davmail:$PATH
 export EDITOR=/usr/bin/emacs
 export VISUAL=/usr/bin/emacs
 export XDG_CURRENT_DESKTOP=KDE
@@ -133,3 +144,8 @@ export DEFAULT_USER=anant
 prompt_context(){}
 source /bin/virtualenvwrapper_lazy.sh
 source ~/.keychain/anant-joshi-sh
+
+if [[ $TERM == "dumb" ]]
+then
+    unsetopt zle && PS1='$ '
+fi

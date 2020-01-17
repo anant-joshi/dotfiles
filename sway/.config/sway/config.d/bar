@@ -1,4 +1,4 @@
 bar {
     swaybar_command waybar
-    gaps 2
+    gaps 0
 }

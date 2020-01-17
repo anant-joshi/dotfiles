@@ -20,8 +20,10 @@ set $gaps_inner 4
 set $gaps_outer 2
 # set $background_image /usr/share/wallpapers/SafeLanding/contents/images/5120x2880.jpg
 set $background_image /usr/share/wallpapers/SafeLanding/contents/images/5120x2880.jpg
+set $wallpaper_left /home/anant/Pictures/wallpapers/by_crossing_2560.jpg
+set $wallpaper_right /home/anant/Pictures/wallpapers/by_home_arrival_2560.jpg
 set $opacity 0.9
-set $screenshot_dir $HOME/Pictures/Screenshots
+set $screenshot_dir /home/anant/Pictures/Screenshots
 
 
 # Workspaces
@@ -50,8 +52,9 @@ set $ws20 "20"
 
 # Application variables
 
-set $menu wofi --show drun
-set $menu_run wofi --show run
+# set $menu wofi -i --show drun
+set $menu ulauncher-toggle
+set $menu_run wofi -i --show run
 set $term konsole
 
 # Enable XWayland
@@ -59,3 +62,14 @@ xwayland enable
 
 default_border none
 default_floating_border normal
+
+# Active output command
+set $output_command $(swaymsg -pt get_outputs | grep focused | awk '{ print $2 }')
+
+
+exec export MOZ_ENABLE_WAYLAND=1
+exec export QT_QPA_PLATFORM=wayland-egl
+exec export GDK_BACKEND=wayland
+exec export CLUTTER_BACKEND=wayland
+
+for_window [app_id="ulauncher"] floating enable, border none

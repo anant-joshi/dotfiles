@@ -2,10 +2,10 @@
     "layer": "top", // Waybar at top layer
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 22, // Waybar height (to be removed for auto height)
-    "margin-top": 6,
+    "margin-top": 0,
     "margin-bottom": 0,
-    "margin-left": 6,
-    "margin-right": 6,
+    "margin-left": 0,
+    "margin-right": 0,
     // "width": 1280, // Waybar width
     // Choose the order of the modules
     "modules-left": ["sway/workspaces", "sway/mode", "custom/media"],

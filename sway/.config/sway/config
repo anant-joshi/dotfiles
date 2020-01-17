@@ -15,4 +15,5 @@ include $config_dir/mode_move_to_monitor
 include $config_dir/layout
 include $config_dir/outputs
 include $config_dir/bar
+include $config/swayidle
 include $config_dir/startup
