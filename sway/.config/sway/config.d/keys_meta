@@ -6,6 +6,10 @@ bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. 
 
 #Swaylock
 bindsym $mod+Shift+x exec swaylock-blur --blur-sigma 50
+bindsym $mod+z exec swayidle \
+	before-sleep swaylock-blur --blur-sigma 50\
+	timeout 180 swaylock-blur --blur-sigma 50\
+	timeout 300 "systemctl suspend"
 
 # kill focused window
 bindsym $mod+Shift+q kill

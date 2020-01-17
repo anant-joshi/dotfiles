@@ -18,6 +18,7 @@ set $right l
 set $gaps 6
 set $gaps_inner 4
 set $gaps_outer 2
+# set $background_image /usr/share/wallpapers/SafeLanding/contents/images/5120x2880.jpg
 set $background_image /usr/share/wallpapers/SafeLanding/contents/images/5120x2880.jpg
 set $opacity 0.9
 set $screenshot_dir $HOME/Pictures/Screenshots
