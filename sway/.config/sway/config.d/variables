@@ -20,8 +20,12 @@ set $gaps_inner 4
 set $gaps_outer 2
 # set $background_image /usr/share/wallpapers/SafeLanding/contents/images/5120x2880.jpg
 set $background_image /usr/share/wallpapers/SafeLanding/contents/images/5120x2880.jpg
-set $wallpaper_left /home/anant/Pictures/wallpapers/by_crossing_2560.jpg
-set $wallpaper_right /home/anant/Pictures/wallpapers/by_home_arrival_2560.jpg
+# set $wallpaper_left /home/anant/Pictures/wallpapers/by_crossing_2560.jpg
+set $wallpaper_left /home/anant/Pictures/wallpapers/sunrise-landscape-art-left.png
+set $wallpaper_right /home/anant/Pictures/wallpapers/sunrise-landscape-art-right.png
+set $wallpaper_center /home/anant/Pictures/wallpapers/sunrise-landscape-art-center.png
+# set $wallpaper_right /home/anant/Pictures/wallpapers/by_home_arrival_2560.jpg
+# set $wallpaper_right /home/anant/Pictures/wallpapers/small-memory-4k_1551642806-right.jpg
 set $opacity 0.9
 set $screenshot_dir /home/anant/Pictures/Screenshots
 
@@ -52,8 +56,8 @@ set $ws20 "20"
 
 # Application variables
 
-# set $menu wofi -i --show drun
-set $menu ulauncher-toggle
+set $menu wofi -i --show drun
+# set $menu ulauncher-toggle
 set $menu_run wofi -i --show run
 set $term konsole
 

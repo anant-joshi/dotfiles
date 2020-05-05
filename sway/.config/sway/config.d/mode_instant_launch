@@ -1,5 +1,6 @@
 mode "Instant Launch" {
     bindsym f exec env MOZ_ENABLE_WAYLAND=1 firefox; mode "default"
+    bindsym p exec env MOZ_ENABLE_WAYLAND=1 firefox --private-window; mode "default"
     bindsym c exec chromium; mode "default"
     bindsym d exec dolphin; mode "default"
     bindsym o exec okular; mode "default"

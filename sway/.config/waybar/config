@@ -16,6 +16,7 @@
         "disable-scroll": false,
         "all-outputs": false,
         "format": "{name} {icon}",
+	"icon-size": 20,
         "format-icons": {
             "1": "",
             "2": "",
@@ -84,7 +85,9 @@
         "spacing": 10
     },
     "clock": {
-        "tooltip-format": "{:%Y-%m-%d | %H:%M}",
+    "interval": 1,
+        "format":"{:%T}",
+        "tooltip-format": "{:%Y-%m-%d | %H:%M:%S}",
         "format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {

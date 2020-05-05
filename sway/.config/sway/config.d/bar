@@ -1,4 +1,5 @@
 bar {
     swaybar_command waybar
+    # status_command CONTRIB_DIR=/home/anant/.config/i3/i3blocks-contrib i3blocks -c /home/anant/.config/i3/i3blocks.conf
     gaps 0
 }

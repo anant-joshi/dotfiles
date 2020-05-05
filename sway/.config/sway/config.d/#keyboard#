@@ -24,9 +24,4 @@ input "1133:16388:Logitech_K360" {
     xkb_options caps:escape,shift:both_capslock_cancel,ctrl:swap_rwin_rctrl,ctrl:menu_rctrl
 }
 
-# input "65261:4611:kb68_kb68" {
-
-input "65261:4611:kb68_kb68_Consumer_Control" {
-    xkb_layout us
-    xkb_options caps:escape,shift:both_capslock_cancel
-}
+input "

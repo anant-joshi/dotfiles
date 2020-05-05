@@ -1,7 +1,7 @@
 exec systemctl --user restart emacs.service
 exec mako
 exec wal -R
-exec pulseeffects --gapplication-service
+# exec pulseeffects --gapplication-service
 exec lxqt-policykit-agent
 exec eval $(keychain --quiet --eval id_rsa) 
 exec source /home/anant/.keychain/anant-joshi-sh
@@ -11,4 +11,6 @@ exec xrdb -load ~/.Xresources
 exec nm-applet --indicator
 exec flashfocus
 exec redshift-gtk
-exec env GDK_BACKEND=wayland ulauncher
+exec  autotiling
+exec /usr/lib/kdeconnectd
+exec emacsclient --daemon
